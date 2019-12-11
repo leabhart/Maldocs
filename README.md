@@ -19,46 +19,47 @@ os.system("Strings \""+filename+"\" | grep http")
 ```
 
 ### Libraries and Programs Used
-fleep: File format determination library for Python
-Author: [Mykyta Paliienko](https://github.com/floyernick)
-[https://github.com/floyernick/fleep-py](https://github.com/floyernick/fleep-py)
+fleep: File format determination library for Python  
+Author: [Mykyta Paliienko](https://github.com/floyernick)  
+[https://github.com/floyernick/fleep-py](https://github.com/floyernick/fleep-py)  
 ```bash
 pip install fleep
 ```
 
-oletools: Python tools to analyze OLE and MS Office files
-Author: [Philippe Lagadec](https://github.com/decalage2)
-[https://github.com/decalage2/oletools/wiki/Install](https://github.com/decalage2/oletools/wiki/Install)
+oletools: Python tools to analyze OLE and MS Office files  
+Author: [Philippe Lagadec](https://github.com/decalage2)  
+[https://github.com/decalage2/oletools/wiki/Install](https://github.com/decalage2/oletools/wiki/Install)  
 ```bash
 pip install -U oletools
 ```
 Note: Specifically this is using olevba.py.
 
-oledump.py: Program to analyze OLE files
-Author: [Didier Stevens](https://blog.didierstevens.com/)
-[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/)
+oledump.py: Program to analyze OLE files  
+Author: [Didier Stevens](https://blog.didierstevens.com/)  
+[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/) 
 
-rtfdump.py: Tool to analyze RTF documents
-Author: [Didier Stevens](https://blog.didierstevens.com/)
-[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/)
+rtfdump.py: Tool to analyze RTF documents  
+Author: [Didier Stevens](https://blog.didierstevens.com/)  
+[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/)  
 
-pdfid.py: Tool to scan a PDF looking for keywords and risky tags
-Author: [Didier Stevens](https://blog.didierstevens.com/)
-[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/)
+pdfid.py: Tool to scan a PDF looking for keywords and risky tags  
+Author: [Didier Stevens](https://blog.didierstevens.com/)  
+[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/)  
 
-pdf-parser.py: Tool to parse a PDF looking at the main PDF elements
-Author: [Didier Stevens](https://blog.didierstevens.com/)
-[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/)
+pdf-parser.py: Tool to parse a PDF looking at the main PDF elements  
+Author: [Didier Stevens](https://blog.didierstevens.com/)  
+[https://blog.didierstevens.com/my-software/](https://blog.didierstevens.com/my-software/)  
 
-Strings: Looks for strings in files.
-Author: Mark Russinovich
+Strings: Looks for strings in files.  
+Author: Mark Russinovich  
 [https://docs.microsoft.com/en-us/sysinternals/downloads/strings](https://docs.microsoft.com/en-us/sysinternals/downloads/strings)
 
 Note: After you download oledump.py, rtfdump.py, pdfid.py, pdf-parser.py, and Strings you'll want to add them to your Path environment variable.
+
 Additional Note: For convenience you'll want to add the maldocs.py script to your Path as well.
 
 ## Usage
-Assuming maldocs.py is in your Path, simply call the script with the file name you want to triage:
+Assuming maldocs.py is in your Path, simply call the script with the file name you want to triage:  
 ```bash
 maldocs.py "some really suspicious email attachment.docm"
 ```
